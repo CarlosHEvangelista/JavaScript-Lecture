@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK EAE MAN</title>
+</head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('button').forEach((button) => {
+                button.onclick = function() {
+                    document.querySelector('h1').style.color = button.dataset.color;
+                }
+            })
+        })
+    </script>
+<body>
+    <h1>Hello</h1>
+    <button data-color="red">red</button>
+    <button data-color="blue">blue</button>
+    <button data-color="green">green</button>
+    <button data-color="orange">orange</button>
+    <button data-color="blueviolet">violet</button>
+
+</body>
+</html>
